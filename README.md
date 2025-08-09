@@ -243,7 +243,7 @@
             
             const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
             const message = `Halo, saya ingin memesan:\n\n${cart.map(item => `${item.name} x${item.quantity} = Rp ${(item.price * item.quantity).toLocaleString()}`).join('\n')}\n\nTotal: Rp ${total.toLocaleString()}`;
-            const whatsappUrl = `https://wa.me/6289536453025?text=${encodeURIComponent(message)}`;
+            const whatsappUrl = `https://wa.me/089536453025?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
         }
 
